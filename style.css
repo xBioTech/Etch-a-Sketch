@@ -1,0 +1,15 @@
+
+
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    border: 3px solid black;
+   max-width: 40%;
+   
+}
+
+.container > div{
+    width: 10px;
+    height: 10px;
+    border: 1px solid gray;
+}

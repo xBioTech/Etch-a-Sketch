@@ -1,13 +1,25 @@
-
+*{
+    box-sizing: border-box;
+    background-color: #FFDEAD;
+}
 
 .container{
     display: grid;
-   max-width: 10%;
-   
+   width: 700px;
+   height: 700px;
+   border: solid black;
 }
 
 .container > div{
-    width: 10px;
-    height: 10px;
     border: 1px solid gray;
+}
+
+.flexcontainer{
+    display: flex;
+    margin-left: 2em;
+}
+
+.slidercontainer{
+    margin-right: 2em;
+    margin-top: 5em;
 }

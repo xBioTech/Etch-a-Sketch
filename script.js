@@ -2,8 +2,12 @@ const container = document.querySelector(".container");
 
 function createGrid(numOfRows, numOfColumns){
 
-    container.style.gridTemplateColumns = `repeat(${numOfColumns}, 1fr)`;
+   
+      container.style.gridTemplateColumns = `repeat(${numOfColumns}, 1fr)`;
     container.style.gridTemplateRows = `repeat(${numOfRows}, 1fr)`;
+    
+
+    
 
 
     container.textContent = "";

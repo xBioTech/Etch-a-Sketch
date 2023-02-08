@@ -23,7 +23,12 @@ function createGrid(numOfRows, numOfColumns){
 }
 createGrid(16, 16);
 
-
+const restartButton = document.querySelector(".btn");
+restartButton.addEventListener("click", () => {
+  const numOfRows = slider.value;
+  const numOfColumns = slider.value;
+  createGrid(numOfRows, numOfColumns);
+});
 
 
 

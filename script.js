@@ -2,13 +2,10 @@ const container = document.querySelector(".container");
 
 function createGrid(numOfRows, numOfColumns){
 
-   
+  
       container.style.gridTemplateColumns = `repeat(${numOfColumns}, 1fr)`;
     container.style.gridTemplateRows = `repeat(${numOfRows}, 1fr)`;
     
-
-    
-
 
     container.textContent = "";
 
@@ -16,7 +13,13 @@ function createGrid(numOfRows, numOfColumns){
     for (let i = 0; i < numOfRows * numOfColumns; i++){
         const div = document.createElement("div");
         container.appendChild(div);
+
+        div.addEventListener("mouseover", () => {
+          div.style.backgroundColor = "black";
+        });
     }
+    
+
 }
 createGrid(16, 16);
 
@@ -40,6 +43,8 @@ output.textContent = slider.value;
 slider.oninput = function() {
   output.textContent = this.value;
 }
+
+
 
 
 

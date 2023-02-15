@@ -15,22 +15,17 @@ function createGrid(numOfRows, numOfColumns){
         container.appendChild(div);
 
         
-
+        
         div.addEventListener("mouseover", () => {
           div.style.backgroundColor = "black";
         });
 
-        function hoverEffect(){
-          div.style.backgroundColor = "#FFDEAD";
-        }
-
-        div.addEventListener("mouseout", hoverEffect)
 
         div.addEventListener("click", () => {
-          div.removeEventListener("mouseout", hoverEffect)
+          div.style.backgroundColor = "#FFDEAD"
         });
 
-        
+
     }
     
 
